@@ -2,27 +2,35 @@
 <html>
 <head>
 	<title></title>
+<link type="text/css" rel="stylesheet" href="styles/style.css"/>
 </head>
 <body>
 
-    	<main>
-
-            <section class="page" id="home">
-                <h1>Stealing info from IMDB!</h1>
-                    <p>Let's get movie info from IMDB by making OMDB our bitch!</p>
+    <main>
+    <!--home page-->
+        <h1>Stealing info from IMDB!</h1>
+        <section class="page" id="home">
+            
+                <p>Let's get movie info from IMDB by making OMDB our bitch!</p>
 
                 <form id="search-form">
-                    <input type="text" id="query">
-                    <button type="submit">Search...</button>
+                    <input type="text" id="film-query" placeholder="eg: Star Wars">
+                    <button type="submit" id="searchButton">Search...</button>
                 </form>
 
             </section>
-            
-            <section id="search">
+    <!--search results-->        
+            <section class="page" id="searchResults">
                 <h3>Search Results:</h3>
+                    <div id="filmList"></div>
+                    <form id="search-form2">
+                        <input type="text" id="new-film-query" placeholder="eg: Star Wars">
+                        <button type="submit" id="searchButton2">Search...</button>
+                    </form>
+
             </section>
 
-        </main>
+    </main>
 
 
 
